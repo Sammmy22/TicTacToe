@@ -9,20 +9,34 @@ html {
 
 #main-grid {
   margin: auto;
-  width: 300px;
-  height: 300px;
+  width: 384px;
+  height: 384px;
   background-color: aqua;
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 128px);
+  grid-template-rows: repeat(3, 128px);
 }
 
 .tiles {
-  background-color: black;
+  background-color: green;
   display: inline-block;
   border: 2px solid crimson;
-  width: 100px;
-  height: 100px;
+  width: 128px;
+  height: 128px;
+}
+
+#turn {
+  display: inline;
+}
+
+.x {
+  background-image: url(Icons/x.png);
+  background-repeat: no-repeat;
+}
+
+.o {
+  background-image: url(Icons/o.png);
+  background-repeat: no-repeat;
 }
