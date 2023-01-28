@@ -57,7 +57,13 @@ for (let i = 0; i < tiles.length; i++) {
         tiles[7].classList.contains("X")) ||
       (tiles[2].classList.contains("X") &&
         tiles[4].classList.contains("X") &&
-        tiles[6].classList.contains("X"))
+        tiles[6].classList.contains("X")) ||
+      (tiles[0].classList.contains("X") &&
+        tiles[3].classList.contains("X") &&
+        tiles[6].classList.contains("X")) ||
+      (tiles[2].classList.contains("X") &&
+        tiles[5].classList.contains("X") &&
+        tiles[8].classList.contains("X"))
     ) {
       chance.innerHTML = "X wins";
       win = true;
@@ -81,7 +87,13 @@ for (let i = 0; i < tiles.length; i++) {
         tiles[7].classList.contains("O")) ||
       (tiles[2].classList.contains("O") &&
         tiles[4].classList.contains("O") &&
-        tiles[6].classList.contains("O"))
+        tiles[6].classList.contains("O")) ||
+      (tiles[0].classList.contains("O") &&
+        tiles[3].classList.contains("O") &&
+        tiles[6].classList.contains("O")) ||
+      (tiles[2].classList.contains("O") &&
+        tiles[5].classList.contains("O") &&
+        tiles[8].classList.contains("O"))
     ) {
       chance.innerHTML = "O wins";
       win = true;

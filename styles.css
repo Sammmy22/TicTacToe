@@ -51,8 +51,8 @@ html {
 }
 
 button {
-  background-color: rgb(10, 72, 104);
-  color: #838996;
+  background-color: #838996;
+  color: rgb(10, 36, 99);
   padding: 10px;
   text-align: center;
   font-family: P2P;
