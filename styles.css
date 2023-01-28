@@ -1,17 +1,30 @@
+@font-face {
+  font-family: P2P;
+  src: url(/Assets/FONTS/PressStart2P-Regular.ttf);
+}
+
 body {
-  font-family: sans-serif;
-  background-image: linear-gradient(#f7ff00, #db36a4);
+  text-align: center;
+  font-family: P2P;
+  background-image: linear-gradient(rgb(10, 36, 99), #3e92cc);
 }
 
 html {
   height: 100vh;
 }
 
+#chance {
+  margin: auto;
+  display: inline-block;
+  font-size: 48px;
+  color: #f8f7ff;
+}
+
 #main-grid {
+  padding-top: 3%;
   margin: auto;
   width: 384px;
   height: 384px;
-  background-color: aqua;
   justify-content: center;
   align-items: center;
   display: grid;
@@ -20,23 +33,32 @@ html {
 }
 
 .tiles {
-  background-color: green;
+  background-color: #f8f7ff;
   display: inline-block;
-  border: 2px solid crimson;
-  width: 128px;
-  height: 128px;
+  border: 4px solid #838996;
+  width: 124px;
+  height: 124px;
 }
 
-#turn {
-  display: inline;
-}
-
-.x {
-  background-image: url(Icons/x.png);
+.X {
+  background-image: url(Assets/Icons/X_icon.png);
   background-repeat: no-repeat;
 }
 
-.o {
-  background-image: url(Icons/o.png);
+.O {
+  background-image: url(Assets/ICONS/O_icon.png);
   background-repeat: no-repeat;
+}
+
+button {
+  background-color: rgb(10, 72, 104);
+  color: #838996;
+  padding: 10px;
+  text-align: center;
+  font-family: P2P;
+  font-size: 24px;
+}
+
+#btn {
+  padding-top: 3%;
 }
